@@ -1,0 +1,25 @@
+[project]
+name = "project_name"
+version = "0.1.0"
+requires-python = ">=3.11"
+description = "A brief description of the project."
+authors = ["Your Name"]
+
+
+[tool.ruff]
+line-length = 130
+lint.select = [
+    "B",  # Bugbear Warnings: Checks for potential bugs or bad practices that could lead to issues.
+    "C",  # Coding Standards: Ensures code follows PEP8 and other coding conventions.
+    "E",  # Errors: Detects serious issues in the code that need to be fixed.
+    "F",  # Pyflakes Warnings: Checks for undefined or unused variables and other potential issues.
+    "I",  # Import Order: Ensures imports are ordered logically and follow Python conventions.
+    "N",  # Naming Conventions: Ensures variables, functions, and classes follow Python naming standards.
+    "Q",  # Quotes: Ensures consistent use of single or double quotes in the code.
+    "W",  # Warnings: General warnings that could indicate problematic code or stylistic issues.
+]
+
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "--strict-markers"
